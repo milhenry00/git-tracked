@@ -1,0 +1,9 @@
+version: "2.0"
+
+services: 
+   java-app:
+      image: java-hello-world
+      build: .
+      container_name: java_hello_container
+      working_dir: /app
+      command: ["java", "HelloWorld"]
